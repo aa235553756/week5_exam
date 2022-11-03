@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <main>
@@ -15,32 +18,60 @@
     bg-center
     bg-cover
     max-w-full 
-    aspect-[1]
-    sm:aspect-[2] 
+    aspect-[1] 
+    sm:aspect-[16/9]
+    sm:h-auto
+    h-screen
     border 
     border-[#707070]">
-      <div class="w-[304px] h-[342px] bg-lime-700 opacity-50">
-        
+      <div class="">
+        <span class="block text-xl leading-[42px] text-white font-bold italic">Here’s</span>
+        <h3 class="text-white mb-8 leading-snug font-black italic text-[64px]">JOANNE</h3>
+        <p class="mb-10 text-lg-2xl text-xl font-bold italic text-white">Founder of “XXXD Official’’<br>& Graphic Designer</p>
+        <ul class="flex gap-4 justify-around">
+          <li><a href="#"><img src="./dist/images/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="./dist/images/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="./dist/images/facebook.svg" alt=""></a></li>
+          <li><a href="#"><img src="./dist/images/facebook.svg" alt=""></a></li>
+        </ul>
       </div>
     </section>
-    <section class="pt-14">
+    <section class="pt-14 pb-14 flex flex-col">
       <h2 class="text-[64px] text-center font-bold italic">About</h2>
-      <img src="dist/images/photo.png" alt="" class="mx-auto">
-      <div class="w-[304px] h-[342px] bg-lime-700 opacity-50 mx-auto">
-        <div class="flex">
-          <div class="w-[22px] h-[22px] rounded-full bg-red-900"></div><p>12345</p>
-        </div>
-        <div class="flex">
-          <div class="w-[22px] h-[22px] rounded-full bg-red-900"></div><p>12345</p>
-        </div>
-        <div class="flex">
-          <div class="w-[22px] h-[22px] rounded-full bg-red-900"></div><p>12345</p>
-        </div>
+      <img src="dist/images/photo.png" alt="" class="mx-auto mb-5">
+      <div class="mx-auto">
+        <ul class="
+        after:block
+        after:mx-auto
+        after:w-[calc(100%-28px)]
+        after:h-[1px]
+        after:bg-black
+        after:mt-6
+        mb-7
+        ">
+          <li class="text-center mb-1 text-2xl font-bold italic">Joanne Chen</li>
+          <li class="text-center mb-2 text-2xl font-bold italic">1997/10/10</li>
+          <li class="text-center md:text-2xl text-xl font-bold italic">National Hex School Normal University<br>Department of Visual Design</li>
+        </ul>
+        <ul class="flex flex-col gap-7">
+          <div class="flex justify-center">
+            <div class="w-[22px] h-[22px] rounded-full bg-red-900 mr-6"></div><p class="text-xl italic">Founder of ‘’XXXD Official’’</p>
+          </div>
+          <div class="flex justify-center">
+            <div class="w-[22px] h-[22px] rounded-full bg-red-900 mr-6"></div><p class="text-xl italic">Graphic Designer</p>
+          </div>
+          <div class="flex justify-center">
+            <div class="w-[22px] h-[22px] rounded-full bg-red-900 mr-6"></div><p class="text-xl italic">Graphic Intern of Hex School</p>
+          </div>
+        </ul>
       </div>
     </section>
     <section class="bg-black pt-14 pb-40">
-      <h2 class="text-white text-[64px] text-center font-bold italic">My Brand ‘’XXXD’’</h2>
-      <div class="w-[304px] h-[342px] bg-lime-700 opacity-50 mx-auto"></div>
+      <h2 class="text-white text-[64px] text-center font-bold italic mb-3">My Brand ‘’XXXD’’</h2>
+      <div class="mb-[68px]">
+        <p class="text-white text-center font-medium text-2xl italic mb-8">Just Keep XXXD Everyday</p>
+        <p class="text-white text-center font-medium text-xl">2020 年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流T-Shirt</p>
+      </div>
       <div class="flex flex-wrap justify-center max-w-[1200px] mx-auto gap-y-10">
         <img src="./dist/images/brand_img1.png" alt="">
         <div class="flex gap-x-6">
@@ -53,6 +84,59 @@
         </div>
       </div>
     </section>
+
+    <section class="container xl:px-0 pt-14 pb-[144px] ">
+      <h2 class="text-[64px] italic font-medium text-center mb-4">Other Works</h2>
+      <div class="mb-14">
+        <p class="font-medium italic text-xl text-center">2016-2020 年累積的作品</p>
+        <p class="font-medium italic text-xl text-center">海報/廣告/攝影/LOGO/3D</p>
+      </div>
+      <div class="flex flex-wrap md:flex-nowrap justify-center gap-x-6 max-w-[1200px] mx-auto">
+        <div>
+          <img src="./dist/images/work_img1.png" alt="work1">
+          <p class="text-xl text-center mt-4 mb-4">海報設計<span class="italic">/2017</span></p>
+        </div>
+        <div>
+          <img src="./dist/images/work_img2.png" alt="work2">
+          <p class="text-xl text-center mt-4 mb-4">海報設計<span class="italic">/2017</span></p>
+        </div>
+        <div>
+          <img src="./dist/images/work_img3.png" alt="work3">
+          <p class="text-xl text-center mt-4 mb-4">海報設計<span class="italic">/2017</span></p>
+        </div>
+      </div>
+      <div class="flex flex-wrap md:flex-nowrap justify-center gap-x-6 max-w-[1200px] mx-auto">
+        <div>
+          <img src="./dist/images/work_img4.png" alt="work4">
+          <p class="mt-4 mb-4 text-xl text-center">概念攝影<span class="italic">/2018</span></p>
+        </div>
+        <div>
+          <img src="./dist/images/work_img5.png" alt="work5">
+          <p class="mt-4 mb-4 text-xl text-center">概念攝影<span class="italic">/2018</span></p>
+        </div>
+      </div>
+      <div class="flex flex-wrap md:flex-nowrap justify-center gap-x-6 max-w-[1200px] mx-auto">
+        <div>
+          <img src="./dist/images/work_img6.png" alt="work-6">
+          <p class="text-xl text-center mt-4 mb-4">官網設計<span class="italic">/2020</span></p>
+        </div>
+        <div>
+          <img src="./dist/images/work_img7.png" alt="work-7">
+          <p class="text-xl text-center mt-4 mb-4">官網設計<span class="italic">/2020</span></p>
+        </div>
+        <div>
+          <img src="./dist/images/work_img8.png" alt="work-8">
+          <p class="text-xl text-center mt-4 mb-4">官網設計<span class="italic">/2020</span></p>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="bg-black py-16">
+    <h2 class="text-center font-medium italic md:text-[64px] text-5xl leading-tight text-white mb-4">Contact</h2>
+    <address>
+      <p class="text-center font-medium italic text-2xl text-white mb-4">Mail：<a href="tel:xxxd@hexschool.com">xxxd@hexschool.com</a></p>
+      <p class="text-center font-medium italic text-2xl text-white">Phone Number：<a href="tel:0975058408">0975058408</a></p>
+    </address>
+  </footer>
 </body>
 </html>

@@ -4,6 +4,9 @@
 
 @layer base {
   /*擴充專案的全站樣式*/
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
 }
 
 @layer components {
